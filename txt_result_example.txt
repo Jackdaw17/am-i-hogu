@@ -1,0 +1,80 @@
+Installing: smartmontools
+Selecting previously unselected package smartmontools.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 213826 files and directories currently installed.)
+Preparing to unpack .../smartmontools_7.4-2build1_amd64.deb ...
+Unpacking smartmontools (7.4-2build1) ...
+Setting up smartmontools (7.4-2build1) ...
+/var/lib/smartmontools/drivedb/drivedb.h 7.3/5528 newly installed (NOT VERIFIED)
+Created symlink /etc/systemd/system/multi-user.target.wants/smartd.service → /usr/lib/systemd/system/smartd.service.
+
+Created symlink /etc/systemd/system/smartd.service → /usr/lib/systemd/system/smartmontools.service.
+
+Created symlink /etc/systemd/system/multi-user.target.wants/smartmontools.service → /usr/lib/systemd/system/smartmontools.service.
+
+smartd.service is a disabled or a static unit, not starting it.
+Processing triggers for man-db (2.12.0-4build2) ...
+
+==================== 1. DISK HISTORY (new: power-on 0-4h, almost nothing written) ====================
+--- /dev/nvme0n1
+Model Number:                       모델명
+Serial Number:                        시리얼번호
+Firmware Version:                    펌웨어
+Total NVM Capacity:                 용량
+Percentage Used:                    0%
+Data Units Read:                    40 [20.4 MB]
+Data Units Written:                 1 [512 KB]
+Power Cycles:                        3
+Power On Hours:                    파워 인가되었던 시간, 4시간 넘으면 중고 부품 의심 경고
+Unsafe Shutdowns:                  3
+Media and Data Integrity Errors:    0
+  [OK] Power-on 0h: within 4h
+--- /dev/sda (ProductCode): USB device, skipped (probably the live USB)  << usb 감지될 수 있음
+--- /dev/sdb (ProductCode): USB device, skipped (probably the live USB)  << usb 감지될 수 있음
+
+==================== 2. CPU / GPU ====================
+CPU(s):                                  12
+Model name:                              모델명
+CPU(s) scaling MHz:                      77%
+03:00.0 VGA compatible controller:   모델명
+
+==================== 3. MOTHERBOARD (compare serial with the box sticker) ====================
+	Manufacturer: Micro-Star International Co., Ltd.
+	Product Name: 모델명
+	Version: 2.0
+	Serial Number: 시리얼번호
+BIOS version: A.I0  /  date: 05/19/2026
+
+==================== 4. RAM (per slot) ====================
+  설치 슬롯 번호       모델명, 제조사마다 표시양식 다를수 있음             / SN 시리얼번호
+  설치 슬롯 번호       모델명, 제조사마다 표시양식 다를수 있음             / SN 시리얼번호
+  
+   ...
+  설치한 갯수마다 다를수 있음
+
+==================== 5. VISUAL CHECK (power off, check by eye) ====================
+  [ ] Seal stickers intact  << 봉인 스티커가 심하게 훼손되거나 추가로 붙인 흔적이 있나요? 
+  [ ] GPU gold fingers: scratches? Heatsink: dust? << GPU/다른 부품들에 수많은 체결 흔적이나 스크래치가 있나요? 
+  [ ] PSU / case screws: marks from being opened many times? << 본체 케이스 나사가 헐겁거나 잘 안맞나요?
+
+Report saved: /home/ubuntu/Desktop/hardware_report_20261126_125224.txt
